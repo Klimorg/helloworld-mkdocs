@@ -1,8 +1,8 @@
 site_name: Helloworld mkdocs
 site_author: Mathieu Klimczak
 dev_addr: "127.0.0.1:8001"
-repo_url: https://gitlab.internal.citc-eurarfid.com/common/helloworld-mkdocs
-repo_name: common/helloworld-mkdocs
+# repo_url: https://gitlab.internal.citc-eurarfid.com/common/helloworld-mkdocs
+# repo_name: common/helloworld-mkdocs
 theme:
   name: material
   logo: images/noun_Robot_1955251.svg
@@ -48,7 +48,6 @@ nav:
   - Section 2:
       - Subsection 2.1:
           - Subsubsection 2.1.1: ssection21/sssection211.md
-
 
 markdown_extensions:
   - admonition

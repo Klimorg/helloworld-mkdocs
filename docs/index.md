@@ -1,4 +1,9 @@
-# HelloWorld MkDocs
+# This is a template for documentations with mkdocs
+
+<p align="center">
+  <a href="https://iotcluster.fr/"><img src="https://iotcluster.fr/wp-content/uploads/2019/04/LogoCITCHeaderGris-1.png
+" alt="CITC1"></a>
+</p>
 
 This repository will serve as a template for how to write technical documentations with the help of :
 
@@ -6,23 +11,6 @@ This repository will serve as a template for how to write technical documentatio
 + [mkdocstrings](https://mkdocstrings.github.io/) for Python docstrings implementation in MkDocs,
 + [MkDocs macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/) to allow macros and variables usage in MkDocs,
 + [diagrams](https://diagrams.mingrammer.com/) (Optional) to draw technical diagrams.
-
-- [HelloWorld MkDocs](#helloworld-mkdocs)
-  - [How to Use MkDocs material](#how-to-use-mkdocs-material)
-    - [Architecture of a Material for MkDocs project](#architecture-of-a-material-for-mkdocs-project)
-    - [MkDocs commands](#mkdocs-commands)
-      - [new project](#new-project)
-      - [serve](#serve)
-      - [build HTML folder](#build-html-folder)
-      - [Hosting on Github/Gitlab page](#hosting-on-githubgitlab-page)
-    - [Use of mkdocstrings](#use-of-mkdocstrings)
-      - [Remark](#remark)
-    - [Use of MkDocs macros](#use-of-mkdocs-macros)
-    - [Use of diagrams](#use-of-diagrams)
-  - [Provided Dockerfile](#provided-dockerfile)
-    - [What if the UID and GID provided are not correct ?](#what-if-the-uid-and-gid-provided-are-not-correct-)
-    - [Use vscode as an IDE inside this container](#use-vscode-as-an-ide-inside-this-container)
-
 
 ## How to Use MkDocs material
 
@@ -111,13 +99,6 @@ Check the [Official documentaiton](https://squidfunk.github.io/mkdocs-material/p
 
 ### Use of mkdocstrings
 
-mkdocstrings is able to parse the docstrings from your python files and render them as part of the documentation you are writing.
-
-#### Remark
-
-You might have to **install your python project** for mkdocstringsto be able to correctly find the paths of your python files.
-
-
 ### Use of MkDocs macros
 
 ### Use of diagrams
@@ -144,9 +125,9 @@ To use this file, follow the following steps :
 
 2. Make sure you have the `Remote - Container` Microsoft's vscode plugin installed on your local machine.
 
-    ![remote-container](./docs/images/remote-container.png)
+    ![remote-container](./images/remote-container.png)
     If you want you can instead install the complete `Remote-development` suite which also provides `Remote-SSH` and `Remote-WSL` inside vscode.
-    ![remote-developement](./docs/images/remote-development.png)
+    ![remote-developement](./images/remote-development.png)
 
 3. Go inside the `devcontainer.json` file and change the source path located in the command
 
@@ -165,7 +146,7 @@ To use this file, follow the following steps :
     ```
 4. Restart vscode. If everything is fine, you should see a popup on the bottom right corner of your vscode ide asking to reopen this folder in a container. Click the reopen button, let vscode build the container, and voila, you're inside a container with vscode activated.
 
-    ![devcontainer](./docs/images/devcontainer.png)
+    ![devcontainer](./images/devcontainer.png)
 
 The `.devcontainer.json` also provides some useful vscode plugins in the container to work with :
 
